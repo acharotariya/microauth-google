@@ -1,0 +1,6 @@
+deploy:
+  provider: npm
+  email: "achrotariya@officebrain.com"
+  api_key: "YOUR_API_KEY"
+  on:
+    tags: true
