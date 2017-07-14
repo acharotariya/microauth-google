@@ -1,6 +1,5 @@
-deploy:
-  provider: npm
-  email: "achrotariya@officebrain.com"
-  api_key: "YOUR_API_KEY"
-  on:
-    tags: true
+ language: node_js
+   deploy:
+   api_key:
+   email: your@emailhere.com
+   provider: npm
