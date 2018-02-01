@@ -13,7 +13,7 @@ const provider = 'google';
 const microAuthGoogle = ({ access_type = 'offline',clientId, clientSecret, callbackUrl, path = '/auth/google', scope = 'https://www.googleapis.com/auth/plus.me'  }) => {
   const getRedirectUrl = () => {
     return `https://accounts.google.com/o/oauth2/auth?access_type=${access_type}&scope=${scope}&response_type=code&client_id=${clientId}&redirect_uri=${callbackUrl}`;
-  };=
+  };
 return fn => async (req, res, ...args) => {
 
   const { pathname, query } = url.parse(req.url);
@@ -87,5 +87,3 @@ return fn => async (req, res, ...args) => {
 };
 
 module.exports = microAuthGoogle;
-
-
